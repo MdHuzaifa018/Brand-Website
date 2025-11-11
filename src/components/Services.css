@@ -1,0 +1,67 @@
+.services {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.services .section-title {
+  color: var(--color-secondary);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.service-card {
+  padding: 50px 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.service-card:hover,
+.service-card.active {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent);
+  transform: translateY(-5px);
+}
+
+.service-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.service-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+}
+
+.service-card:hover .service-description,
+.service-card.active .service-description {
+  max-height: 200px;
+}
+
+.services-cta {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.deck-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s ease;
+}
+
+.deck-link:hover {
+  opacity: 0.7;
+}

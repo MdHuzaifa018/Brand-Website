@@ -1,0 +1,54 @@
+.why-us {
+  background: var(--color-secondary);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.feature-item {
+  position: relative;
+}
+
+.feature-number {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  color: var(--color-accent);
+  opacity: 0.3;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.feature-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.testimonial {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 40px;
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.testimonial blockquote {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: var(--color-text);
+}
+
+.testimonial cite {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
